@@ -152,7 +152,7 @@ function randomTaslar() {
 let lastTouch = 0;
 document.addEventListener('touchend', event => {
   const now = window.performance.now();
-  if (now - lastTouch <= 100) {
+  if (now - lastTouch <= 00) {
     event.preventDefault();
   }
   lastTouch = now;
