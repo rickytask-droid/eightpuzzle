@@ -1,0 +1,138 @@
+@charset "UTF-8";
+html{
+  font-size: 100%;
+  background-color: white;
+  margin-top: -30rem;
+  margin-right: 0rem;
+  padding-right: -5rem;
+}
+body{
+  border-color: white;
+  margin-right: 10rem;
+  margin-left: 30rem;
+  
+}
+h1{
+  font-size: 5rem;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-self;
+}
+p{
+  font-size: 3rem;
+  font-family: "ヒイラギノ丸ゴ　Pro W4", "Hiragino Maru Gothic Pro", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+article{
+  width: 100%;
+  margin-right: -10rem;
+  
+  margin-left: 0rem;
+  margin-bottom: 30rem;
+}
+aside{
+  width: 0%;
+  margin-left: 5rem;
+  
+  margin-top: 0rem;
+  margin-bottom: 10rem;
+  padding-top: 0rem;
+
+  
+}
+header{
+  margin-top: -2rem;
+  margin-left: 5rem;
+  text-align: center;
+  color: white;
+  background-image: url(kikagaku.png);
+  margin-right: 0rem;
+}
+.tile {
+  width: 15rem;
+
+  height: 15rem;
+
+  font-family: "Quantico";
+
+  font-size: 6rem;
+
+  color: aqua;
+
+  border-style: solid;
+
+  border-color: aqua;
+
+  border-width: 0.5rem;
+
+  margin-right: -0.25rem;
+
+  margin-left: -0.25rem;
+
+
+}
+
+.btn-primary{
+padding: 2.5rem 4rem 2.5rem 4rem;
+font-size: 3rem;
+}
+
+.puzzlebodysize{
+  margin-left: -5rem;
+  margin-right: 0rem;
+  margin-top: 30rem;
+  padding-right: -50rem;
+  
+}
+
+#sns{
+  background: #faf7f0;
+  padding: 4% 0;
+  margin-left: 5rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  margin-right: 0rem;
+  
+}
+#sns a{
+  color: #432;
+}
+#sns a:hover{
+  color: #0bd;
+}
+.footer{
+  margin-left: 5rem;;
+  background-color: black;
+  margin-right: 0rem;
+  color: white;
+  text-align: center;
+  padding: 2REM 0;
+}
+.aside{
+  background-color: #faf7f0;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top: 0rem;
+  margin-bottom: 10rem;
+  padding-top: 0rem;
+
+  padding: 4% 0;
+  margin-left: 5rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.sub-menu a{
+  color: #432;
+}
+.sub-menu a:hover{
+  color: #0bd;
+}
+.btn1{
+  margin-right: 3rem;
+}
+.btn2{
+  color: yellow;
+  margin-left: 3rem;
+}

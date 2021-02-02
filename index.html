@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>8パズル</title>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">]
+
+    <link rel="stylesheet" href="layout.css">
+
+    <script type="text/javascript" src="puzzle.js"></script>
+
+    <script type="text/javascript">
+        function load() {
+            var colorArray = new Array("red", "blue", "lightseagreen");//色を指定、乱数で変更
+            var color = colorArray[Math.floor(Math.random() * colorArray.length)];
+            var box = document.getElementById('puzzle');
+            //box.style.backgroundColor = color;
+            box.style.borderColor = color;
+        }
+        setInterval(function () {
+
+            // define our colors
+            var colors = ["#CCCCCC", "#333333", "#990099"];
+            // get a reference to <div id="mybox"></div>
+            var myBox = document.getElementById("mybox");
+            // get a random color from list
+            var rand = Math.floor(Math.random() * colors.length);
+            // set random color as borderColor
+            myBox.style.borderColor = colors[rand];
+
+        }, 500); // run twice a second
+    </script>
+
+</head>
+<header>
+    <h1>8パズル</h1>
+</header>
+
+<body onload="load()" class="puzzlebodysize">
+    <article>
+        <center>
+
+            
+            <p>↓クリックorタップで動かす</p>
+            <div id="puzzle">
+
+                <button id="t0" class="btn btn-secondary tile " onclick="pushed(this.id)"> </button>
+                <button id="t1" class="btn btn-secondary tile " onclick="pushed(this.id)">1</button>
+                <button id="t2" class="btn btn-secondary tile " onclick="pushed(this.id)">2</button><br />
+
+                <button id="t3" class="btn btn-secondary tile " onclick="pushed(this.id)">3</button>
+                <button id="t4" class="btn btn-secondary tile " onclick="pushed(this.id)">4</button>
+                <button id="t5" class="btn btn-secondary tile " onclick="pushed(this.id)">5</button><br />
+
+                <button id="t6" class="btn btn-secondary tile " onclick="pushed(this.id)">6</button>
+                <button id="t7" class="btn btn-secondary tile " onclick="pushed(this.id)">7</button>
+                <button id="t8" class="btn btn-secondary tile " onclick="pushed(this.id)">8</button>
+
+            </div>
+            <script>
+
+                function clearjudge() {
+                    var tt0 = document.getElementById('t0').innerText;
+                    var tt1 = document.getElementById('t1').innerText;
+                    var tt2 = document.getElementById('t2').innerText;
+                    var tt3 = document.getElementById('t3').innerText;
+                    var tt4 = document.getElementById('t4').innerText;
+                    var tt5 = document.getElementById('t5').innerText;
+                    var tt6 = document.getElementById('t6').innerText;
+                    var tt7 = document.getElementById('t7').innerText;
+
+                    var t11 = parseInt(tt1);
+                    var t22 = parseInt(tt2);
+                    var t33 = parseInt(tt3);
+                    var t44 = parseInt(tt4);
+                    var t55 = parseInt(tt5);
+                    var t66 = parseInt(tt6);
+                    var t77 = parseInt(tt7);
+                    var t00 = parseInt(tt0);
+
+                    if (t00 + 1 == t11 && t11 + 1 == t22 && t22 + 1 == t33 && t33 + 1 == t44 && t44 + 1 == t55 && t55 + 1 == t66 && t66 + 1 == t77) {
+                        alert("クリア!!おめでとう!!🎉🎉🎉");
+                    } else {
+                        alert("未完成です。数字の並びが違うかも！");
+                    }
+                }
+            </script>
+            <br>
+
+
+            <button type="button" class="btn btn-primary btn1" id="btn1"
+                onclick="randomTaslar() ; load()">シャッフル</button>
+            　<button type="button" class="btn btn-primary btn2" onclick="clearjudge()">判定</button>
+            <script>
+                document.getElementById('btn1').click();
+            </script>
+    </article>
+    <div class="aside">
+        <details class="sub-menu">
+            <summary>８パズルとは？</summary>
+            <p style="font-size: small;">左上から数字が順番になるようにする３×３のスライドパズル。</p>
+            <p style="font-size: small;">ちなみに、どんな配置でも、最短３１手で解くことができるらしいです。</p>
+            <p style="font-size: small;">クリアが必ずできるように設計されているので頑張ってみてください！</p>
+        </details>
+        <h3>|</h3>
+        <details class="sub-menu">
+            <summary>参考</summary>
+            <p style="font-size: small;">TechAcademyのWebページを参照しました。</p>
+            <p style="font-size: small;"><a href="https://techacademy.jp/magazine/38348" target="_blank">Webはこちら！</a>
+            </p>
+        </details>
+        <h3>|</h3>
+        <details class="sub-menu">
+            <summary>ご意見・連絡</summary>
+            <p style="font-size: small;"><a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSf9XODA9hpbvrgQe826XutPeObCb9E8Pve1VSz54TW2UQRmlw/viewform?usp=sf_link"
+                    　target="_blank">Googleフォーム</a>をクリック！</p>
+        </details>
+        <h3>|</h3>
+        <details class="sub-menu">
+            <summary>ほかのミニゲーム</summary>
+            <p style="font-size: small;">現在企画・製作中です！Coming soon!</p>
+        </details>
+    </div>
+    
+</body>
+<section id="sns">
+    <h3><a href="" target="_blank">Instagram</a></h3>
+    <h3>|</h3>
+    <h3><a href="https://docs.google.com/forms/d/e/1FAIpQLSf9XODA9hpbvrgQe826XutPeObCb9E8Pve1VSz54TW2UQRmlw/viewform?usp=sf_link"
+            target="_blank">お問い合わせ</a></h3>
+    <h3>|</h3>
+    <h3>Thanks for <a href="https://techacademy.jp/magazine/38348" target="_blank">TechAcademy</a></h3>
+</section>
+<footer class="footer">
+    <p style="font-size: small;"><small>&copy;SR app developer has published this puzzle since 2021/2/2</small></p>
+</footer>
+
+</html>
