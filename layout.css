@@ -7,6 +7,7 @@ html{
   padding-right: -5rem;
 }
 body{
+  margin-top:8rem;
   border-color: white;
   margin-right: 10rem;
   margin-left: 30rem;
@@ -28,7 +29,7 @@ article{
   margin-right: -10rem;
   
   margin-left: 0rem;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 aside{
   width: 0%;
@@ -110,7 +111,7 @@ font-size: 3rem;
   margin-right: 0rem;
   color: white;
   text-align: center;
-  padding: 2REM 0;
+  padding: 2rem 0;
 }
 .aside{
   background-color: #faf7f0;
