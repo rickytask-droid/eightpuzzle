@@ -71,10 +71,13 @@ header{
 
 
 }
-
+#puzzle{
+  margin-left: 5rem;
+}
 .btn-primary{
 padding: 2.5rem 4rem 2.5rem 4rem;
 font-size: 3rem;
+  margin-left: 5rem;
 }
 
 .puzzlebodysize{
